@@ -161,8 +161,8 @@
                 </div>
                 <!-- Player Cart -->
                 <div>
-                    <div class="h-96 border p-3 Selected-V-Height">
-                        <h2 class="text-2xl text-center">Selected - <span id="total-selected-player">5</span> </h2>
+                    <div class="h-96 border p-3 ">
+                        <h2 class="text-2xl text-center">Selected - List<span id="total-selected-player"></span></h2>
                         <hr class="mt-2">
                         <!-- table  -->
                         <div class="overflow-x-auto mt-3">
@@ -190,18 +190,23 @@
 
                         </div>
                         <button id="calculate" class="btn btn-primary mt-3 w-full">Calculate</button>
-                        <!---mmmmmm-->
-                        <p>Player Expenses </p>
-                        <input id="total-player-cost" class="w-3/4" type="number" placeholder="total player">
-                        <!---mmmmmm-->
-                        <div class="flex">
+
+                        <div class="flex mt-3">
+                            <p>Player Expenses </p>
+                            <input id="total-player-cost" class="w-3/4" type="number">
+                        </div>
+
+                        <div class="flex mt-10">
                             <p>Manager: </p> <input id="manager-slary" class="w-3/4" type="number">
                         </div>
                         <div class="flex mt-3">
                             <p>Coach: </p> <input id="coach-slary" class="w-3/4" type="number">
                         </div>
                         <button id="calculate-total" class="btn btn-primary mt-3 w-full">Calculate Total</button>
-                        <p>Total: </p> <input id="total" class="w-3/4" type="number">
+                        <div class="flex mt-3">
+                            <p>Total: </p>
+                            <input id="total" class="w-3/4" type="number">
+                        </div>
                     </div>
                 </div>
             </div>
