@@ -44,7 +44,7 @@
                                 36 Goals 120 Assist
                             </p>
                             <div class="card-actions justify-center">
-                                <button class="btn btn-primary w-full" onclick="addToCart(this)">Select</button>
+                                <button class="btn btn-primary w-full" onclick="selectPlayer(this)">Select</button>
                             </div>
                         </div>
                     </div>
@@ -57,7 +57,7 @@
                                 36 Goals 120 Assist
                             </p>
                             <div class="card-actions justify-center">
-                                <button class="btn btn-primary w-full" onclick="addToCart(this)">Select</button>
+                                <button class="btn btn-primary w-full" onclick="selectPlayer(this)">Select</button>
                             </div>
                         </div>
                     </div>
@@ -70,7 +70,7 @@
                                 36 Goals 120 Assist
                             </p>
                             <div class="card-actions justify-center">
-                                <button class="btn btn-primary w-full" onclick="addToCart(this)">Select</button>
+                                <button class="btn btn-primary w-full" onclick="selectPlayer(this)">Select</button>
                             </div>
                         </div>
                     </div>
@@ -86,7 +86,7 @@
                                 36 Goals 120 Assist
                             </p>
                             <div class="card-actions justify-center">
-                                <button class="btn btn-primary w-full" onclick="addToCart(this)">Select</button>
+                                <button class="btn btn-primary w-full" onclick="selectPlayer(this)">Select</button>
                             </div>
                         </div>
                     </div>
@@ -99,7 +99,7 @@
                                 36 Goals 120 Assist
                             </p>
                             <div class="card-actions justify-center">
-                                <button class="btn btn-primary w-full" onclick="addToCart(this)">Select</button>
+                                <button class="btn btn-primary w-full" onclick="selectPlayer(this)">Select</button>
                             </div>
                         </div>
                     </div>
@@ -112,7 +112,7 @@
                                 36 Goals 120 Assist
                             </p>
                             <div class="card-actions justify-center">
-                                <button class="btn btn-primary w-full" onclick="addToCart(this)">Select</button>
+                                <button class="btn btn-primary w-full" onclick="selectPlayer(this)">Select</button>
                             </div>
                         </div>
                     </div>
@@ -128,7 +128,7 @@
                                 36 Goals 120 Assist
                             </p>
                             <div class="card-actions justify-center">
-                                <button class="btn btn-primary w-full" onclick="addToCart(this)">Select</button>
+                                <button class="btn btn-primary w-full" onclick="selectPlayer(this)">Select</button>
                             </div>
                         </div>
                     </div>
@@ -141,7 +141,7 @@
                                 36 Goals 120 Assist
                             </p>
                             <div class="card-actions justify-center">
-                                <button class="btn btn-primary w-full" onclick="addToCart(this)">Select</button>
+                                <button class="btn btn-primary w-full" onclick="selectPlayer(this)">Select</button>
                             </div>
                         </div>
                     </div>
@@ -154,7 +154,7 @@
                                 36 Goals 120 Assist
                             </p>
                             <div class="card-actions justify-center">
-                                <button class="btn btn-primary w-full" onclick="addToCart(this)">Select</button>
+                                <button class="btn btn-primary w-full" onclick="selectPlayer(this)">Select</button>
                             </div>
                         </div>
                     </div>
@@ -162,17 +162,21 @@
                 <!-- Player Cart -->
                 <div>
                     <div class="h-96 border p-3 Selected-V-Height">
-                        <h2 class="text-2xl text-center">Selected - <span id="total-selected-player">0</span> </h2>
+                        <h2 class="text-2xl text-center">Selected - <span id="total-selected-player">5</span> </h2>
                         <hr class="mt-2">
                         <!-- table  -->
                         <div class="overflow-x-auto mt-3">
-                            <table class="table w-full">
-                                <tbody id="cart-Player">
+                            <!-- <table class="table w-full"> -->
+                            <ol id="ol">
+                                <!-- <li >abc</li> -->
+
+                            </ol>
+                            <!-- <tbody id="cart-Player">
                                     <tr>
 
                                     </tr>
-                                </tbody>
-                            </table>
+                                </tbody> -->
+                            <!-- </table> -->
                         </div>
                     </div>
 
@@ -186,11 +190,11 @@
 
                         </div>
                         <button id="calculate" class="btn btn-primary mt-3 w-full">Calculate</button>
-
+                        <!---mmmmmm-->
                         <p>Player Expenses </p>
-                        <input id="total-player-cost" class="w-3/4" type="number">
-
-                        <div class="flex mt-3">
+                        <input id="total-player-cost" class="w-3/4" type="number" placeholder="total player">
+                        <!---mmmmmm-->
+                        <div class="flex">
                             <p>Manager: </p> <input id="manager-slary" class="w-3/4" type="number">
                         </div>
                         <div class="flex mt-3">
@@ -212,6 +216,5 @@
 
         <script src="js/index.js"></script>
 
-</body>
 
 </html>

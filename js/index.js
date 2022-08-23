@@ -1,45 +1,23 @@
-const cartArry = [];
 
-function display(cartPlayer) {
-
-
-    const tableBody = document.getElementById('cart-Player');
-    tableBody.innerHTML = '';
-
-
-
-    for (let i = 0; i < cartPlayer.length; i++) {
-        const plyerSelect = cartArry[i];
-
-
-        const tr = document.createElement('tr');
-
-        tr.innerHTML = `
-        <td>${i + 1}</td>
-         <td>${plyerSelect}</td>
+function selectPlayer(element) {
+    const getNameElement = element.parentNode.parentNode.children[0].innerHTML;
+    console.log(getNameElement);
+    const listElement = document.getElementById('ol')
+    const name = listElement.children
+    if (name.length <= 4) {
+        const li = document.createElement('li');
+        li.innerHTML = `
+        ${getNameElement}
         `;
-        tableBody.appendChild(tr);
+        listElement.appendChild(li);
+        // const disableButton = element.parentNode.children[1];
+        element.disabled = true
 
-    }
-
-}
-
-function addToCart(element) {
-
-    const playerName = element.parentNode.parentNode.children[0].innerText;
-
-    cartArry.push(playerName);
-
-    display(cartArry);
-
-    const totalSelectedPlayer = document.getElementById('total-selected-player').innerText = cartArry.length;
-
-    if (cartArry.length > 5) {
-        alert('Your Select is over');
 
     }
     else {
-
+        alert("You have selected maximum  players")
+        return;
     }
 }
 
