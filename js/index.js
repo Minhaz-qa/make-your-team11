@@ -31,6 +31,7 @@ function addToCart(element) {
     const totalSelectedPlayer = document.getElementById('total-selected-player').innerText = cartArry.length;
     if (cartArry.length > 5) {
         alert('Your Select is over');
+        return;
 
     }
 }
