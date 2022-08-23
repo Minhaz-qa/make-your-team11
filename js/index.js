@@ -1,14 +1,16 @@
 const cartArry = [];
 
 function display(cartPlayer) {
-    // console.log(cartPlayer);
+
 
     const tableBody = document.getElementById('cart-Player');
     tableBody.innerHTML = '';
 
+
+
     for (let i = 0; i < cartPlayer.length; i++) {
         const plyerSelect = cartArry[i];
-        // console.log(plyerSelect)
+
 
         const tr = document.createElement('tr');
 
@@ -17,7 +19,9 @@ function display(cartPlayer) {
          <td>${plyerSelect}</td>
         `;
         tableBody.appendChild(tr);
+
     }
+
 }
 
 function addToCart(element) {
@@ -29,9 +33,12 @@ function addToCart(element) {
     display(cartArry);
 
     const totalSelectedPlayer = document.getElementById('total-selected-player').innerText = cartArry.length;
+
     if (cartArry.length > 5) {
         alert('Your Select is over');
-        return;
+
+    }
+    else {
 
     }
 }
