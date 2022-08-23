@@ -21,16 +21,11 @@ function display(cartPlayer) {
 }
 
 function addToCart(element) {
-    // console.log(element.parentNode.parentNode.children[0].innerText);
-    const playerName = element.parentNode.parentNode.children[0].innerText;
-    // console.log(playerName);
 
-    // const PlayerObj = {
-    //     playerName: playerName,
-    // }
+    const playerName = element.parentNode.parentNode.children[0].innerText;
+
     cartArry.push(playerName);
-    // console.log(cartArry);
-    // console.log(cartArry.length);
+
     display(cartArry);
 
     const totalSelectedPlayer = document.getElementById('total-selected-player').innerText = cartArry.length;
